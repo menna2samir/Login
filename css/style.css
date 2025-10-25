@@ -1,0 +1,80 @@
+:root {
+    --main-color: #24353f;
+}
+
+body {
+    background-color: #24353f;
+}
+
+.group {
+    box-shadow: -5px 2px 54px -9px rgba(0, 0, 0, 1);
+
+}
+
+.sign-up .container,
+.log-in .container {
+    background: #24353f;
+    --bs-body-bg: transparent;
+    --bs-body-color: #ced4da;
+    box-shadow: -5px 2px 54px -9px rgba(0, 0, 0, 1);
+    width: 55%;
+}
+
+input {
+    background-color: transparent;
+}
+
+.form-control::placeholder {
+    color: var(--bs-body-color) !important;
+}
+
+.form-control {
+    outline: #ced4da !important;
+    background-color: var(--bs-body-bg);
+}
+
+.form-control:focus {
+    box-shadow: none !important;
+}
+
+a.hover-underline {
+    text-decoration: none;
+}
+
+a.hover-underline:hover {
+    text-decoration: underline;
+}
+
+.content-box {
+    height: 80vh;
+}
+
+.content-box-item {
+    width: 56%;
+}
+
+h1 {
+    color: #17a2b8;
+}
+
+.btn-outline-warning {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: transparent;
+    --bs-btn-border-color: #ffc107;
+
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #ffc107;
+    --bs-btn-hover-border-color: #ffc107;
+
+    --bs-btn-focus-shadow-rgb: 255, 193, 7;
+
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: transparent;
+    --bs-btn-active-border-color: #ffc107;
+
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: transparent;
+    --bs-btn-disabled-border-color: #ffc107;
+
+    --bs-gradient: none;
+}

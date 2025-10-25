@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Login</title>
+</head>
+
+<body>
+
+
+
+    <div class="log-in" id="loginPage">
+        <div
+            class="container m-auto mt-5 p-5 text-center d-flex flex-column align-content-center justify-content-center">
+            <h1 class="text-capitalize mb-3 text-info">Smart Login System</h1>
+            <input type="email" class="form-control w-100 mb-3 rounded-1" id="userLoginEmail"
+                placeholder="Enter your email">
+            <input type="password" class="form-control w-100 mb-1 rounded-1" id="userLoginPassword"
+                placeholder="Enter your password">
+
+            <p id="loginErrorMsg" class="fw-semibold my-2 text-danger"></p>
+            <button type="submit" id="loginBtn" class="btn btn-outline-info w-100 my-3">Login</button>
+            <p class="text-white">Don’t have an account? <a class="text-white hover-underline" id="signUpLink"
+                    href="#">Sign Up</a></p>
+        </div>
+
+    </div>
+
+
+
+    <div class="sign-up d-none" id="signUpPage">
+        <div
+            class="container m-auto mt-5 p-5 text-center d-flex flex-column align-content-center justify-content-center">
+            <h1 class="text-capitalize mb-3 text-info">Smart Login System</h1>
+            <input type="text" class="form-control w-100 mb-3 rounded-1" id="userName" placeholder="Enter your name">
+            <input type="email" class="form-control w-100 mb-3 rounded-1" id="userEmail" placeholder="Enter your email">
+            <input type="password" class="form-control w-100 mb-1 rounded-1" id="userPassword"
+                placeholder="Enter  password">
+
+            <p id="signUpMsg" class="fw-semibold my-2"></p>
+            <button type="submit" class="btn btn-outline-info w-100 my-3" id="signUpBtn">Sign Up</button>
+            <p class="text-white">You have an account? <a class="text-white hover-underline" id="loginLink"
+                    href="#">Signin</a></p>
+        </div>
+    </div>
+
+
+
+    <div id="homePage" class="d-none">
+        <div class="container-fluid group">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container">
+                    <a class="navbar-brand text-white" href="#">SMART LOGIN</a>
+
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse justify-content-end mt-sm-5 mt-lg-0" id="navbarNav">
+                        <button class="btn btn-outline-warning" type="submit" id="logoutBtn">Logout</button>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+        <div class="container content-box text-center d-flex align-items-center">
+            <div class="content-box-item group m-auto p-5" id="welcomeUser"></div>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
